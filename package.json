@@ -1,0 +1,29 @@
+{
+  "name": "quotes-app",
+  "version": "1.0.0",
+  "description": "A simple RESTful API built with Express.js, providing a collection of quotes. Retrieve random quotes or access quotes by their IDs using the available routes. This project is for learning purposes at Kanzu Code Foundation backend track [Assignment 2]",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Famba-Abdulnassiir/quotes-app.git"
+  },
+  "keywords": [
+    "Quotes API",
+    "Quotes APP",
+    "API",
+    "Backend"
+  ],
+  "author": "Abdulnassiir Famba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Famba-Abdulnassiir/quotes-app/issues"
+  },
+  "homepage": "https://github.com/Famba-Abdulnassiir/quotes-app#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
