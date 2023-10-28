@@ -1,6 +1,6 @@
 const express =  require('express');
 const app = express();
-const  quoteRoute = require('./routes/quotes')
+const  quoteRoute = require('./v1/routes/quotes')
 
 const PORT = process.env.PORT || 8000
 
@@ -8,7 +8,12 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 //Define all your routes here.
-app.use('/quotes', quoteRoute);
+app.use('/api/v1/quotes', quoteRoute);
+
+app.use("*",(req,res) => {
+    return res.status(404)
+              .json({Message:"End point doesnot exist"})
+})
 
 
 app.listen(PORT, ()=> {
