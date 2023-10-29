@@ -24,6 +24,10 @@
   },
   "homepage": "https://github.com/Famba-Abdulnassiir/quotes-app#readme",
   "dependencies": {
+    "@prisma/client": "^5.5.2",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "prisma": "^5.5.2"
   }
 }
